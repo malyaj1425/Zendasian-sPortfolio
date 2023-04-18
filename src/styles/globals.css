@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0; */
+  }
+}
+@font-face {
+  font-family: 'Journal';
+  src: url('../fonts/journal.ttf'); /* adjust the path to match your project's file structure */
+}
+
+.notebook-font {
+  font-family: 'Journal', sans-serif; /* use the font-family name you defined above */
+  font-size: 28px; /* adjust the font size as needed */
+  line-height: 1.5;
+  letter-spacing: 5px; /* adjust the line height as needed */
+}
+.title-fonts{
+  font-family: 'Journal', sans-serif;
+  font-size: 78px;
+  line-height: 1.5;
+  
+}
+.hr-lines{
+  position: relative;
+  max-width: 600px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.hr-lines:before{
+  content:" ";
+  height: 10px;
+  width: 130px;
+  background: red;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.hr-lines:after{
+  content:" ";
+  height: 10px;
+  width: 130px;
+  background: red;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+body {
+  background-image: url('https://images3.alphacoders.com/129/1298880.png'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.custom-shape-divider-top-1681795572 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1681795572 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 242px;
+}
+
+.custom-shape-divider-top-1681795572 .shape-fill {
+  fill: #000000;
+}
